@@ -1,0 +1,47 @@
+/* -------SOBRE MI------- */
+
+header {
+  background-color: #c9e3e4;
+}
+
+main {
+  background-color: #d1edef;
+}
+
+#sobremi__contenedor {
+  padding: 20px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sobremi__contenedor p {
+  width: 50%;
+  font-size: 20px;
+  margin: 20px;
+}
+
+#sobremi__contenedor picture img {
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/*-------MEDIA QUERIES------*/
+
+@media screen and (max-width: 480px) {
+header {
+  flex-direction: column;
+  background-color: #c9e3e4;
+}
+
+#sobremi__contenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+
+}

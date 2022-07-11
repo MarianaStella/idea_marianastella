@@ -1,0 +1,51 @@
+/* -------CURSOS------- */
+
+header {
+  background-color: #bebedc;
+}
+
+main {
+  background-color: #cdcbed;
+}
+
+.cursos {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cursos__text {
+  width: 50%;
+  font-size: 20px;
+}
+#cursos__text p,
+#cursos__list{
+  list-style: none;
+}
+
+.videocurso__img {
+  width: 400px; 
+  justify-items: center;
+  align-content: center;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/*-------MEDIA QUERIES------*/
+
+@media screen and (max-width: 480px) {
+header {
+  flex-direction: column;
+  background-color: #bebedc;
+}
+
+.cursos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+}

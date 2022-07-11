@@ -1,0 +1,61 @@
+/* -------CONTACTO------- */
+
+header {
+    background-color: #c1dcc6;
+}
+
+main {
+    background-color: #d2efd7;
+}
+
+p {
+    font-size: 18px;
+    padding: 1px;
+    margin: 1px;
+}
+
+#fieldset__container {
+    width: 400px;
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid #282828;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mapa__img {
+    width: 400px; 
+    justify-items: center;
+    align-content: center;
+    margin: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+/*-------MEDIA QUERIES------*/
+
+@media screen and (max-width: 480px) {
+header {
+    flex-direction: column;
+    background-color: #c1dcc6;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+}
+
+
+}
