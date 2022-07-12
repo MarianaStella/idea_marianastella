@@ -4,8 +4,8 @@ header {
     background-color: #c5d1e0;
 }
 
-main {
-    background-color: #cddaee;
+.main__galeria {
+    background-image: linear-gradient(#c5d1e0, #D5DFEF, white);
 }
 
 img{

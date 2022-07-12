@@ -4,8 +4,8 @@ header {
   background-color: #bebedc;
 }
 
-main {
-  background-color: #cdcbed;
+.main__cursos {
+  background-image: linear-gradient(#bebedc, #cdcbed, #DCD5DF, white);
 }
 
 .cursos {

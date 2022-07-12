@@ -4,8 +4,8 @@ header {
   background-color: #c9e3e4;
 }
 
-main {
-  background-color: #d1edef;
+.main__sobremi {
+  background-image: linear-gradient(#c9e3e4, #DBF0F1, white);
 }
 
 #sobremi__contenedor {

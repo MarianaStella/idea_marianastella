@@ -1,10 +1,10 @@
 /* -----------SERVICIOS---------- */
 header {
-  background-color: #cbbdd3;
+  background-color: #C4B2CA;
 }
 
-main {
-  background-color: #d6c7de;
+.main__servicios {
+  background-image: linear-gradient(#C4B2CA, #D6C7DE, #DCD5DF, white);
   display: flex;
 }
 
