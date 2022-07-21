@@ -17,21 +17,18 @@ header {
 }
 
 #cursos__text {
-  width: 50%;
+  width: 40%;
   font-size: 20px;
 }
-#cursos__text p,
-#cursos__list{
-  list-style: none;
+
+footer {
+  background-color: #E0E1E1;
+  opacity: 60%;
+  padding: 30px;
+  display: grid;
+  grid-row: auto;
 }
 
-.videocurso__img {
-  width: 400px; 
-  justify-items: center;
-  align-content: center;
-  margin: 20px;
-  border-radius: 20px;
-}
 
 /*-------MEDIA QUERIES------*/
 
@@ -46,6 +43,22 @@ header {
   align-items: center;
   flex-direction: column;
   padding-bottom: 1.5rem;
+  margin: 0;
+  }
+
+  #cursos__text{
+    width: 70%;
+    padding-bottom: 10px
+  }
+
+
+.video {
+  padding: 30px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 }

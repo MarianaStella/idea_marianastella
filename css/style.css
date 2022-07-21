@@ -21,7 +21,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 130px auto 40px;
   width: 100%;
-  height: 100vh;
 }
 
 header {
@@ -29,7 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(251, 210, 115, 0.5);
+  background-color: #fbd273;
 }
 
 .header__logo {
@@ -43,7 +42,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fbd273;
+  background-image: radial-gradient(white, #FEDE92, #fbd273);
 }
 
 main .fondo img {
@@ -81,8 +80,10 @@ h1 {
   font-family: "Allura", cursive;
 }
 
-footer {
-  grid-area: footer;
+.pie-pagina {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
 }
 
 .headline__title {
@@ -90,6 +91,15 @@ footer {
   text-align: center;
   margin: 20px 0;
 }
+
+footer {
+  background-color: #E0E1E1;
+  opacity: 60%;
+  padding: 30px;
+  display: grid;
+  grid-row: auto;
+}
+
 
 /*--------MEDIA QUERIES--------*/
 
