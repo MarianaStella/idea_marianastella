@@ -18,6 +18,19 @@ header {
   width: 70%;
 }
 
+button {
+  padding: 10px;
+  margin: 20px;
+}
+
+footer {
+  background-color: #E0E1E1;
+  opacity: 60%;
+  padding: 30px;
+  display: grid;
+  grid-row: auto;
+}
+
 /*-------MEDIA QUERIES------*/
 
 @media screen and (max-width: 480px) {

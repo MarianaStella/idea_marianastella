@@ -21,6 +21,13 @@ img{
     align-content: center;
     gap: 2rem;
     padding: 40px;
+    opacity: 0.5;
+}
+
+.gallery:hover{
+  opacity: 1;
+  transition: all 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .gallery__img:nth-last-of-type(8){
@@ -53,6 +60,14 @@ img{
 
 .gallery__img:nth-last-of-type(1){
     grid-column: 4 / 4;
+}
+
+footer {
+  background-color: #E0E1E1;
+  opacity: 60%;
+  padding: 30px;
+  display: grid;
+  grid-row: auto;
 }
 
 
