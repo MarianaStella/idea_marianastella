@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(white, #FEDE92, #fbd273);
+
+    .fondo img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 80px;
+        padding-top: 5rem;
+        font-family: "Amatic+SC";
+        text-align: center;
+    }
+    
+    .allura {
+        font-size: 30px;
+        font-family: "Allura", cursive;
+    }
+}   
+
+

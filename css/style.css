@@ -80,12 +80,6 @@ h1 {
   font-family: "Allura", cursive;
 }
 
-.pie-pagina {
-  display: flex;
-  justify-content: space-around;
-  font-size: 20px;
-}
-
 .headline__title {
   font-size: 50px;
   text-align: center;
@@ -96,8 +90,9 @@ footer {
   background-color: #E0E1E1;
   opacity: 60%;
   padding: 30px;
-  display: grid;
-  grid-row: auto;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
 }
 
 
