@@ -9,15 +9,18 @@ main {
     }
 
     h1 {
-        font-size: 80px;
-        padding-top: 5rem;
-        font-family: "Amatic+SC";
+        font-size: map-get($map: $font-sizes, $key: "80");
+        padding-top: map-get($map: $spacings, $key: "medium");
+        font-family: map-get($map: $font-family, $key: "titulo-principal");
         text-align: center;
+        color: map-get($map: $colors, $key: "text");
+
     }
     
-    .allura {
-        font-size: 30px;
-        font-family: "Allura", cursive;
+    .montserrat {
+        font-size: map-get($map: $font-sizes, $key: "32");
+        font-family: map-get($map: $font-family, $key: "general");
+        color: map-get($map: $colors, $key: "text");
     }
 }   
 
