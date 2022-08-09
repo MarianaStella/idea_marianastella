@@ -1,0 +1,59 @@
+@import "../mixin";
+
+#contenedor{
+    .main__sobremi {
+        section{
+            width: 65%;
+            .headline__title{
+                @include title;
+            }
+            #sobremi__contenedor{
+                display: flex;
+                padding: 20px;
+                margin: 20px;
+                justify-content: center;
+                align-items: center;
+
+                p{
+                    font-size: map-get($map: $font-sizes, $key: "16");
+                    padding: 0 30px 20px 0;
+                }
+                picture{
+                    width: 50%;
+                    img{
+                        width: 300px;
+                        margin: 20px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-------MEDIA QUERIES------*/
+
+@media screen and (max-width: 480px) {  
+#contenedor{
+    .main__sobremi {
+        .headline__title{
+            font-size: map-get($map: $font-sizes, $key: "32");
+        }
+        #sobremi__contenedor {
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        width: 100%;
+
+        picture {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center; 
+            width: 200px;
+            }
+        }
+    }
+}
+}
+

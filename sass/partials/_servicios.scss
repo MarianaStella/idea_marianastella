@@ -1,14 +1,60 @@
-.main__servicios {
-    justify-content: space-between;
+@import "../mixin";
 
-    #servicios__content {
-        width: 80%;
-        padding: 40px 0;
-    }
+#contenedor{
+    .main__servicios {
+        .headline__title{
+            @include title;
+        }
+        #servicios__content {
+            width: 80%;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            
+            .servicios{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0;
+            }
+        }
 
-    button {
-        margin: 20px 0 40px 0;
+        button {
+            margin: 20px 0 40px 0;
+        }
     }
 }
 
+/*-------MEDIA QUERIES------*/
 
+@media screen and (max-width: 480px){
+    #contenedor{
+        .main__servicios {
+            .headline__title{
+                font-size: map-get($map: $font-sizes, $key: "32");
+            }
+            #servicios__content {
+                width: 90%;
+                padding: 0px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+                .servicios{
+                    display: flex;
+                    padding: 10px 0;
+                    h3{
+                        font-size: map-get($map: $font-sizes, $key: "14");
+                        width: 70%;
+                        text-align: left;
+                    }
+                    p{
+                        font-size: map-get($map: $font-sizes, $key: "14");
+                        width: 30%;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,12 +1,19 @@
+@import "../mixin";
+
 main {
+    grid-area: main;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: radial-gradient(white, #FEDE92, #fbd273);
+    background-image: map-get($map: $colors, $key: "gradient");
 
-    .fondo img {
+    picture {
         width: 100%;
+        img {
+            width: 100%;
+        }
     }
+
 
     h1 {
         font-size: map-get($map: $font-sizes, $key: "80");
@@ -18,10 +25,27 @@ main {
     }
     
     .montserrat {
-        font-size: map-get($map: $font-sizes, $key: "32");
+        font-size: map-get($map: $font-sizes, $key: "24");
         font-family: map-get($map: $font-family, $key: "general");
         color: map-get($map: $colors, $key: "text");
     }
 }   
+
+/*-------MEDIA QUERIES------*/
+
+@media screen and (max-width: 480px) {
+    main {
+        h1 {
+            font-size: map-get($map: $font-sizes, $key: "50");
+        }
+
+        .montserrat {
+            font-size: map-get($map: $font-sizes, $key: "16");
+        }
+    }
+}
+
+
+
 
 

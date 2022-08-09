@@ -1,0 +1,79 @@
+@import "../mixin";
+
+#contenedor{
+    .main__cursos {
+        .headline__title{
+            @include title;
+        }
+        section{
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .cursos {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                button {
+                    margin: 20px;
+                }
+            }
+
+            p {
+                width: 60%;
+                font-size: map-get($map: $font-sizes, $key: "16");
+                padding: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+/*-------MEDIA QUERIES------*/
+
+@media screen and (max-width: 480px) {
+    #contenedor{
+        .main__cursos {
+            .headline__title{
+                font-size: map-get($map: $font-sizes, $key: "32");
+            }
+            section{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+    
+                .cursos {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    p {
+                        width: 90%;
+                    }
+    
+                    button {
+                        margin: 20px;
+                    }
+                }
+                .video{
+                    width: 90%;
+                    iframe {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+

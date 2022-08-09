@@ -1,10 +1,13 @@
 /*----FONT-SIZES----*/
 $font-sizes: (
 "80": 80px,
+"50": 50px,
 "32": 32px,
 "24": 24px,
 "18": 18px,
 "16": 16px,
+"14": 14px,
+"12": 12px,
 );
 
 /*----FONT-FAMILY----*/
@@ -18,6 +21,7 @@ $colors: (
 "text": #2B2B2B,
 "white": #FFFFFF,
 "yellow-home": #fbd273,
+"gradient": linear-gradient(180deg, rgba(251,210,115,1) 0%, rgba(255,243,215,1) 100%),
 );
 
 /*----SPACINGS----*/
@@ -28,3 +32,4 @@ $spacings: (
 "xs": 5px,
 "xxs": 2px,
 );
+

@@ -1,0 +1,62 @@
+@import "../mixin";
+
+#contenedor{
+    .main__contacto{
+        .headline__title{
+            @include title;
+        }
+        .formulario{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: none;
+            form{
+                #fieldset__container{
+                    width: 400px;
+                    padding: 20px;
+                    margin: 40px;
+                    border: 1px solid #282828;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    p {
+                        font-size: 18px;
+                        padding: 1px;
+                        margin: 1px;
+                    }
+                }
+            }
+        }
+
+        div{
+            h3 {
+                font-size: map-get($map: $font-sizes, $key: "18");
+            }
+            picture{
+                img{
+                    width: 400px; 
+                    justify-items: center;
+                    align-content: center;
+                    border-radius: 20px;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*-------MEDIA QUERIES------*/
+
+@media screen and (max-width: 480px) {  
+
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+}
+
+}
